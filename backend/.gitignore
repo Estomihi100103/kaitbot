@@ -1,0 +1,11 @@
+storage/
+migration/version
+__pycache__/
+.env
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.egg-info/
+*.egg
+*.db
