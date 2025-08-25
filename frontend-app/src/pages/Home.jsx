@@ -87,13 +87,13 @@
                             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
                         />
                     </div>
-                    <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 sm:h-96">
+                    <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-48 sm:h-96">
                         <div className="text-center">
                             <h1 className="text-5xl font-bold tracking-tight text-balance text-gray-900 sm:text-7xl">
-                                KaitBot
+                               Chatbot AI Kustom untuk Bisnis Anda
                             </h1>
                             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-                                KaitBot adalah platform chatbot-as-a-service yang memungkinkan integrasi asisten AI ke situs web Anda dengan satu baris skrip JavaScript, serta kustomisasi respons AI berdasarkan dokumen atau URL.
+                               KaitBot adalah platform pembuat chatbot yang memudahkan integrasi asisten AI ke situs bisnis Anda, dengan respons yang dapat disesuaikan sesuai kebutuhan.
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <a
