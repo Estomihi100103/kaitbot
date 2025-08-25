@@ -4,7 +4,14 @@ export default function EmbedCode({ companySlug }) {
   const [showEmbedCode, setShowEmbedCode] = useState(false);
 
   const getEmbedCode = () => {
-    return `<script src="http://localhost:8000/api/v1/chatbot/embed/${companySlug}.js" defer></script>`;
+    const apiUrl = import.meta.env.VITE_API_URL;
+    try {
+      const baseUrl = new URL(apiUrl).origin;
+      return `<script src="${baseUrl}/api/v1/chatbot/embed/${companySlug}.js" defer></script>`;
+    } catch {
+      console.error("Invalid VITE_API_URL:", apiUrl);
+      return `<script src="ERROR_INVALID_API_URL/api/v1/chatbot/embed/${companySlug}.js" defer></script>`;
+    }
   };
 
   return (
