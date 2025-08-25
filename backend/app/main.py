@@ -11,8 +11,8 @@ from app.api.v1.conversation import router as conversation_router
 from app.middleware.cors import add_cors_middleware
 
 app = FastAPI(title="My App API", version="1.0.0")
-static_dir = os.path.join(os.path.dirname(__file__), "static")
-app.mount("/static", StaticFiles(directory=static_dir), name="static")
+# static_dir = os.path.join(os.path.dirname(__file__), "static")
+# app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 add_cors_middleware(app)
 
