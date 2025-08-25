@@ -185,7 +185,7 @@ export default function Layout({ children, title }) {
                                         <span className="sr-only">Open user menu</span>
                                         <img
                                             alt=""
-                                            src="/src/assets/img/user.png"
+                                            src="/user.png"
                                             className="size-8 rounded-full bg-gray-50"
                                         />
                                         <span className="hidden lg:flex lg:items-center">
