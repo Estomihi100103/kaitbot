@@ -115,6 +115,7 @@ async def get_embed_js(
         chatWindow.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         chatWindow.style.opacity = '0';
         chatWindow.style.transform = 'translateY(20px)';
+        chatWindow.style.zIndex = '1002';
         chatbotContainer.appendChild(chatWindow);
         
         // Header chat dengan tombol tutup
