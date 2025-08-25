@@ -55,7 +55,7 @@ export default function Layout({ children, title }) {
             <div className="flex h-16 shrink-0 items-center">
                 <img
                     alt="KaitBot"
-                    src="/src/assets/img/logo.png"
+                    src="/logo.png"
                     className="h-12 w-auto"
                 />
             </div>
