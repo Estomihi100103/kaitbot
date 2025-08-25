@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, Request
 from fastapi.responses import PlainTextResponse
 from sqlalchemy.orm import Session
 from app.config.database import get_db
@@ -37,16 +37,25 @@ async def get_widget_config(company_slug: str, db: Session = Depends(get_db)):
 
 
 @router.get("/embed/{company_slug}.js", response_class=PlainTextResponse)
-async def get_embed_js(company_slug: str, db: Session = Depends(get_db)):
+
+async def get_embed_js(
+    company_slug: str, 
+    request: Request, 
+    db: Session = Depends(get_db)
+):
+    
     company = db.query(Company).filter(Company.slug == company_slug).first()
     if not company:
         raise HTTPException(status_code=404, detail="Company not found")
+    
+    base_url = f"{request.url.scheme}://{request.headers['host']}"
+    api_url = f"{base_url}/api/v1/chatbot"
     
     js_content = f"""
 (async () => {{
     try {{
         const companySlug = '{company_slug}';
-        const API_URL = 'http://localhost:8000/api/v1/chatbot';
+        const API_URL = '{api_url}';
         
         let threadId = localStorage.getItem(`chatbot_thread_id_${{companySlug}}`);
         if (!threadId) {{
