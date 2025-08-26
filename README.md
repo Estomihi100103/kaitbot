@@ -2,17 +2,17 @@
 
 Platform untuk Membangun Chatbot Perusahaan Anda.
 
-KaitBot adalah platform *chatbot-as-a-service* untuk membangun dan mengintegrasikan chatbot asisten AI ke situs web anda. Platform ini memungkinkan kustomisasi respons AI menggunakan data dari dokumen atau URL website, dengan integrasi melalui satu baris skrip JavaScript.
+KaitBot adalah platform *chatbot-as-a-service* untuk membangun dan mengintegrasikan chatbot asisten AI ke situs web. Platform ini memungkinkan kustomisasi respons AI menggunakan data dari dokumen atau URL website, dengan integrasi melalui satu baris skrip JavaScript.
 
 
-## Fitur Utama
+## Fitur
 
 - **Integrasi Sederhana**: Sematkan chatbot ke situs web manapun melalui satu baris skrip JavaScript, tanpa memerlukan implementasi kode yang kompleks di sisi klien.
 - **Knowledge Base Fleksibel**: Latih AI dengan data spesifik Anda. Unggah dokumen (PDF, TXT) atau sediakan URL website untuk di-crawl dan diekstrak secara otomatis sebagai basis pengetahuan.
 - **Dashboard Manajemen Intuitif**: Antarmuka untuk mengelola *bot*, sumber pengetahuan, melihat riwayat percakapan, dan mendapatkan skrip penyematan.
 - **Riwayat & Analitik Percakapan**: Simpan setiap interaksi pengunjung berdasarkan sesi untuk analisis dan pemahaman kebutuhan pengguna.
 
-## Tumpukan Teknologi
+## Teknologi
 
 - **Backend**: FastAPI (Python)
 - **Frontend (Dashboard)**: React.js (Vite)
